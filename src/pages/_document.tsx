@@ -26,7 +26,10 @@ class MyDocument extends Document {
             property="og:description"
             content="A secure & decentralised password manager, powered by Arweave."
           />
-          <meta property="og:image" content="/og.png" />
+          <meta
+            property="og:image"
+            content="https://trysera.vercel.app/og.png"
+          />
           <meta property="twitter:card" content="summary_large_image" />
         </Head>
         <body>
