@@ -10,7 +10,8 @@ export default function Home() {
 
   useEffect(() => {
     const keyfile = localStorage.getItem("keyfile");
-    if (router.asPath === "/" && keyfile) router.push("/dashboard");
+    if (router.pathname === "/" && keyfile)
+      router.push(router.asPath + "dashboard");
   }, []);
 
   const client = new Arweave({
@@ -73,7 +74,7 @@ export default function Home() {
             localStorage.setItem("keyfile", JSON.stringify(jwk));
             localStorage.setItem("address", addr);
 
-            router.push("/dashboard");
+            router.push(router.asPath + "dashboard");
           };
           reader.readAsText(ev.target.files[0]);
         }}

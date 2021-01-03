@@ -295,7 +295,8 @@ export default function Dashboard() {
 
   useEffect(() => {
     const keyfile = localStorage.getItem("keyfile");
-    if (router.asPath === "/dashboard" && !keyfile) router.push("/");
+    if (router.pathname === "/dashboard" && !keyfile)
+      router.push(router.asPath.split(router.pathname)[0] || "/");
     else setAddr(localStorage.getItem("address"));
   }, []);
 
@@ -396,7 +397,9 @@ export default function Dashboard() {
               onClick={() => {
                 localStorage.removeItem("address");
                 localStorage.removeItem("keyfile");
-                Router.push("/");
+                Router.push(
+                  Router.router.asPath.split(Router.router.pathname)[0] || "/"
+                );
               }}
             >
               Sign Out
@@ -432,7 +435,9 @@ export default function Dashboard() {
             onClick={() => {
               localStorage.removeItem("address");
               localStorage.removeItem("keyfile");
-              Router.push("/");
+              Router.push(
+                Router.router.asPath.split(Router.router.pathname)[0] || "/"
+              );
             }}
           >
             Sign Out
