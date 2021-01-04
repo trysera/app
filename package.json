@@ -9,7 +9,7 @@
     "@geist-ui/react": "^2.1.0-canary.2",
     "@limestonefi/api": "^0.1.2",
     "@primer/octicons-react": "^11.2.0",
-    "@trysera/lib": "^0.0.0",
+    "@trysera/lib": "^0.0.1",
     "ar-gql": "^0.0.3",
     "arweave": "^1.10.0",
     "next": "^10.0.3",

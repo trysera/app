@@ -161,15 +161,16 @@
   resolved "https://registry.yarnpkg.com/@primer/octicons-react/-/octicons-react-11.2.0.tgz#af60301257cdbc1561c2647678282d3bce5a6c54"
   integrity sha512-pi3DT5fUtATw2atMRQ7xCUUbdauA/hYTKfM2ijf3rtipeyQ7Ou3ij/JLhnc9Ke110ljHJh69j/PiINbbKAYegQ==
 
-"@trysera/lib@^0.0.0":
-  version "0.0.0"
-  resolved "https://registry.yarnpkg.com/@trysera/lib/-/lib-0.0.0.tgz#3dde0cd1e7eac3ebd3f4d08b54491e35c60349ea"
-  integrity sha512-VUa6mJo0BQYgRcBjKr8xgPsmN08USERW5s6C+8AZ+zFXuAu5BeM9R6l9NFtdY1/xTw4m9Dn8vRZNv4PgHeGttA==
+"@trysera/lib@^0.0.1":
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/@trysera/lib/-/lib-0.0.1.tgz#af35c6b26180abb187fc62044eff244a4053f2eb"
+  integrity sha512-/yXpoDSjfGOCKJttTI9zGosTZhi/lMJQwvXvZrELsCzk3TV/3O2hK+2VI0Eb+nWTorBv+XmBNy7sXOQpZyisdQ==
   dependencies:
     "@limestonefi/api" "^0.1.2"
     ar-gql "^0.0.3"
     arweave "^1.10.0"
     nanoid "^3.1.20"
+    node-fetch "^2.6.1"
 
 "@types/json-schema@^7.0.5", "@types/json-schema@^7.0.6":
   version "7.0.6"
